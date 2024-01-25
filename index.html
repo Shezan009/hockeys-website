@@ -1,11 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockeys Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- tailwind custom classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <!-- custom styles -->
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+
 </head>
-<body>
-    
+
+
+
+
+
+
+
+<body class="font-poppins">
+
+    <header class="md:container md:mx-auto  ">
+
+        <nav>
+
+            <div class="navbar bg-base-100">
+                <div class="">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <!-- sm -->
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  text-base  ">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <a class=" btn btn-ghost text-2xl  lg:text-4xl">Hockey's</a>
+                </div>
+
+                <!-- lg -->
+
+                <div class="navbar-center hidden lg:flex   ">
+                    <ul class="menu menu-horizontal px-1    text-base  ">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <a class=" btn bg-red-500 text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+
+
+
+    </header>
+
+    <main>
+
+
+
+
+        <!-- slider or carousel -->
+        <div class="carousel w-full lg:h-[550px] ">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="Images/3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="Images/4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Professional hockey club -->
+
+        <section class="">
+
+            <div class="text-center mt-4 p-4   lg:P-10">
+
+                <h2 class=" text-xl  lg:text-4xl font-bold text-black"> Professional Hockeys Club </h2>
+                <p class="text-gray-500">Join our club to get professional coach as well as official training ground and
+                    excel in your journey
+                    to
+                    be the best player.</p>
+            </div>
+
+            <div class=" flex  flex-col  lg:flex-row  gap-16    p-4   lg:p-14 ">
+
+                <div class="text-center">
+                    <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+                    <h3 class="text-center  text-black text-xl">Prayer Facility</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
+                    <h3 class="text-black text-xl">Experienced Coach</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
+                    <h3 class="text-black text-xl"> Senior Player</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+                    <h3 class="text-black text-xl">Training Ground</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- program section -->
+        <section class="m-4">
+
+
+            <div class="text-center">
+                <h2 class="  text-xl lg:text-4xl font-bold   mb-7   ">Program Sections</h2>
+                <p class="mb-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                    Purus urna in
+                    sit nullam proin. </p>
+            </div>
+
+
+            <div class=" flex  flex-col  lg:flex-row justify gap-6 justify-evenly  ">
+
+
+                <div class="1">
+
+                    <div class="   hero min-w-22 m-2  " style="background-image: url(Images/2.png);">
+
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md text-left">
+                                <h1 class="mb-5 text-5xl font-bold">Junior <br> Program</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                                    excepturi
+                                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <button class="btn btn-primary">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="2">
+                    <div class=" hero  min-w-22   m-2" style="background-image: url(Images/3.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md text-left">
+                                <h1 class="mb-5 text-5xl font-bold">Teenager Program</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                                    excepturi
+                                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <button class="btn btn-primary">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div 3>
+                <div class="hero min-w-32 mt-6  " style="background-image: url(Images/4.png);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md  text-left">
+                            <h1 class="mb-5 text-5xl font-bold">Professional Program</h1>
+                            <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                                excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <button class="btn btn-primary">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- our products -->
+        <section>
+
+
+            <h3 class="text-5xl font-bold text-black text-center m-6"> Our New Products</h3>
+
+            <p class="text-xl text-center m-4  ">Checkout our all new product lineup! Stay tuned ! </p>
+
+
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10  m-10  ">
+
+
+                <div class="hero min-h-screen bg-base-200">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-5xl font-bold">Jacket</h1>
+                            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <h1 class="text-5xl font-bold text-red-500">Price - $29.00</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero min-h-screen bg-base-200">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="Images/6.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-5xl font-bold">Football</h1>
+                            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <h1 class="text-5xl font-bold text-red-500">Price - $40.00</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="hero min-h-screen bg-base-200">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="Images/7.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-5xl font-bold">Cap </h1>
+                            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <h1 class="text-5xl font-bold text-red-500">Price - $12.00</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="hero min-h-screen bg-base-200">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="Images/8.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-5xl font-bold">Jersey </h1>
+                            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <h1 class="text-5xl font-bold text-red-500">Price - $22.00</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="hero min-h-screen bg-base-200">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="Images/9.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-5xl font-bold">Helmet</h1>
+                            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <h1 class="text-5xl font-bold text-red-500">Price - $19.00</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="hero min-h-screen bg-base-200">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="Images/10.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-5xl font-bold">All match tickets</h1>
+                            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <h1 class="text-5xl font-bold text-red-500">Price - $$...00</h1>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- get in touch -->
+            <section>
+
+
+
+
+
+            </section>
+
+            <h3 class="text-5xl font-bold text-black text-center m-6"> Get In Touch</h3>
+            <p class="text-xl text-center m-6  ">If you have any query, please "Contact as" </p>
+
+
+
+            <div class=" flex  flex-col  lg:flex-row justify gap-6 justify-evenly  ">
+
+
+
+                <!-- card -->
+
+                <div>
+                    <div>
+                        <div class="card w-96 bg-green-100 text-neutral-content   m-4">
+                            <div class="card-body items-start text-start">
+                                <div>
+                                    <img src="Images/Group 1171275317.png" alt="">
+                                </div>
+                                <h2 class="card-title text-gray-700">Phone Number : <br>
+                                    (+62) 123-321-543</h2>
+                                <!-- <div class="card-actions justify-end"> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card w-96 bg-pink-100 text-neutral-content     m-4">
+                        <div class="card-body items-start text-start">
+                            <img src="Images/Group 1171275318.png" alt="">
+
+                            <h2 class="card-title text-gray-700">Email : <br>
+                                hockeys@support.com</h2>
+
+
+                            <div class="card-actions justify-start">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card w-96 bg-blue-100 text-neutral-content   m-4">
+                        <div class="card-body items-start text-start">
+                            <img src="Images/Group 1171275321.png" alt="">
+                            <h2 class="card-title text-gray-700">Location : <br>
+                                152/1 Mohakhali Wireless Gate</h2>
+                            <div class="card-actions justify-end">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- card end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- mail -->
+
+                <div>
+                    <div class="hero min-h-screen bg-base-200">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                            <div class="text-center lg:text-left">
+                            </div>
+                            <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Your name</span>
+                                        </label>
+                                        <input type="email" placeholder="Write name" class="input input-bordered"
+                                            required />
+                                    </div>
+
+
+
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Your email</span>
+                                        </label>
+                                        <input type="password" placeholder="email" class="input input-bordered"
+                                            required />
+                                        <label class="label">
+                                        </label>
+                                    </div>
+
+
+                                    <label class="form-control">
+                                        <div class="label">
+                                            <span class="label-text">Message</span>
+                                        </div>
+                                        <textarea class="textarea textarea-bordered h-24"
+                                            placeholder="Write your message"></textarea>
+                                        <div class="label">
+                                        </div>
+                                    </label>
+
+
+
+                                    <div class="form-control mt-6">
+                                        <button class="btn btn-primary bg-red-500">Send message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- mail end -->
+            </div>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer p-10 bg-black text-white">
+        <aside>
+
+            <h3 class="text-2xl">Get In Touch</h3>
+            <p>Providing reliable tech since 1992 . <br> Visit our academy and join our support team.</p>
+
+            <p>hockeys@support.com</p>
+
+            <p>(+62) 123-321-543</p>
+
+
+
+
+        </aside>
+        <nav>
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Leadership</a>
+            <a class="link link-hover">Career</a>
+            <a class="link link-hover">News & Article</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Support</h6>
+            <a class="link link-hover">Help center</a>
+            <a class="link link-hover">Contact us</a>
+            <a class="link link-hover">Ticket support</a>
+            <a class="link link-hover">FAQ</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Academy</a>
+            <a class="link link-hover">Hockey for kids</a>
+            <a class="link link-hover">Hockey for adults</a>
+        </nav>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
